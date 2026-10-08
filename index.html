@@ -1,385 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>So This Is Kevin…</title>
+<title>RA 9729 Reflection</title>
 
-  <style>
+<style>
     * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
     }
 
     body {
-      font-family: Arial, sans-serif;
-      background: #f4f1ea;
-      color: #222;
-      line-height: 1.7;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #e8f5e9, #e3f2fd);
+        color: #263238;
+        line-height: 1.7;
+        padding: 25px 15px;
     }
 
     .container {
-      width: 90%;
-      max-width: 850px;
-      margin: auto;
+        max-width: 800px;
+        margin: auto;
     }
 
-    /* HEADER */
-    header {
-      min-height: 75vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 40px 20px;
-    }
-
-    .intro {
-      width: 100%;
-    }
-
-    .small-text {
-      display: inline-block;
-      background: white;
-      padding: 8px 15px;
-      border-radius: 30px;
-      font-size: 13px;
-      color: #666;
-      margin-bottom: 20px;
-    }
-
-    h1 {
-      font-family: Georgia, serif;
-      font-size: clamp(50px, 11vw, 90px);
-      line-height: 1;
-      margin-bottom: 20px;
-    }
-
-    .subtitle {
-      color: #666;
-      font-size: 17px;
-      max-width: 600px;
-      margin: auto;
-    }
-
-    .scroll {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 10px 20px;
-      background: #dfe8f2;
-      color: #31506f;
-      border-radius: 25px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    /* SECTIONS */
-    section {
-      background: white;
-      margin-bottom: 25px;
-      padding: 35px;
-      border-radius: 25px;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.06);
-    }
-
-    h2 {
-      font-family: Georgia, serif;
-      font-size: 32px;
-      margin-bottom: 18px;
-    }
-
-    p {
-      margin-bottom: 15px;
-    }
-
-    /* PROFILE */
-    .profile {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 15px;
-      margin-top: 25px;
-    }
-
-    .profile-box {
-      background: #e9eef4;
-      padding: 20px;
-      border-radius: 18px;
+    .hero {
+        background: linear-gradient(135deg, #1b5e20, #2e7d32, #0277bd);
+        color: white;
+        padding: 45px 25px;
+        border-radius: 25px;
+        text-align: center;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        margin-bottom: 25px;
     }
 
     .icon {
-      font-size: 25px;
-      margin-bottom: 5px;
+        font-size: 55px;
+        margin-bottom: 10px;
     }
 
-    .label {
-      font-size: 12px;
-      color: #777;
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 1px;
+    .hero h1 {
+        font-size: 32px;
+        margin-bottom: 10px;
     }
 
-    .value {
-      font-weight: bold;
-      margin-top: 3px;
-    }
-
-    /* STRENGTHS / WEAKNESSES */
-    .cards {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
+    .hero p {
+        font-size: 16px;
+        opacity: 0.95;
     }
 
     .card {
-      border: 1px solid #ddd;
-      padding: 25px;
-      border-radius: 20px;
-    }
-
-    .card h3 {
-      margin-bottom: 10px;
-      font-size: 20px;
-    }
-
-    /* CHESS */
-    .chess {
-      font-size: 60px;
-      margin-bottom: 10px;
-    }
-
-    /* PROMISE */
-    .promise {
-      background: #e9eef4;
-      border: 1px solid #ccd8e5;
-    }
-
-    .promise-text {
-      background: rgba(255,255,255,0.8);
-      padding: 22px;
-      border-left: 5px solid #31506f;
-      border-radius: 0 15px 15px 0;
-      font-family: Georgia, serif;
-      font-size: 17px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #777;
-      font-size: 13px;
-    }
-
-    /* PHONE */
-    @media (max-width: 600px) {
-
-      section {
+        background: white;
+        border-radius: 20px;
         padding: 25px;
-      }
-
-      .cards {
-        grid-template-columns: 1fr;
-      }
-
-      .profile {
-        grid-template-columns: 1fr;
-      }
-
-      h1 {
-        font-size: 52px;
-      }
+        margin-bottom: 20px;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.08);
     }
-  </style>
+
+    .card h2 {
+        color: #2e7d32;
+        margin-bottom: 15px;
+        font-size: 23px;
+    }
+
+    .provision {
+        background: #e8f5e9;
+        border-left: 6px solid #2e7d32;
+        padding: 18px;
+        border-radius: 12px;
+        margin-top: 10px;
+    }
+
+    .provision strong {
+        color: #1b5e20;
+    }
+
+    .reflection p {
+        margin-bottom: 15px;
+        text-align: justify;
+    }
+
+    .highlight {
+        background: linear-gradient(135deg, #e0f2f1, #e8f5e9);
+        border-radius: 18px;
+        padding: 22px;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .highlight h3 {
+        color: #00695c;
+        margin-bottom: 8px;
+    }
+
+    .footer {
+        text-align: center;
+        padding: 20px;
+        color: #546e7a;
+        font-size: 14px;
+    }
+
+    .leaf {
+        font-size: 25px;
+    }
+
+    @media (max-width: 600px) {
+        .hero h1 {
+            font-size: 26px;
+        }
+
+        .hero {
+            padding: 35px 20px;
+        }
+
+        .card {
+            padding: 20px;
+        }
+
+        .reflection p {
+            text-align: left;
+        }
+    }
+</style>
 </head>
 
 <body>
 
-  <!-- INTRO -->
-  <header>
-    <div class="intro">
+<div class="container">
 
-      <div class="small-text">
-        SCAN COMPLETE • WELCOME
-      </div>
+    <section class="hero">
+        <div class="icon">🌎🌱</div>
+        <h1>RA 9729</h1>
+        <p>Climate Change Act of 2009</p>
+        <p>Section 2 • Declaration of Policy</p>
+    </section>
 
-      <h1>So This Is Kevin…</h1>
+    <section class="card">
+        <h2>📖 The Provision</h2>
 
-      <p class="subtitle">
-        A little something about me, my experiences,
-        and the person I'm becoming.
-      </p>
+        <div class="provision">
+            <strong>Section 2 – Declaration of Policy</strong>
+            <br><br>
+            The government recognizes the importance of addressing climate
+            change and protecting the environment for both present and
+            future generations. It promotes sustainable development and
+            the protection of people and the environment from the effects
+            of climate change.
+        </div>
+    </section>
 
-      <a href="#about" class="scroll">
-        Discover more ↓
-      </a>
+    <section class="card reflection">
+        <h2>💭 My Reflection</h2>
 
+        <p>
+            Section 2 of RA 9729 made me realize that protecting the
+            environment is not only the responsibility of the government.
+            It also affects our lives and the lives of future generations.
+            Climate change can cause problems such as stronger storms,
+            floods, rising temperatures, and damage to nature.
+        </p>
+
+        <p>
+            For me, this provision is important because we all depend on
+            the environment every day. We need clean air, clean water,
+            food, and a safe place to live. Sometimes, people may not
+            notice the effects of climate change immediately, but small
+            changes in our environment can become bigger problems over time.
+        </p>
+
+        <p>
+            I also realized that ordinary people can contribute to
+            protecting the environment. Even simple actions like reducing
+            waste, saving electricity and water, avoiding unnecessary
+            plastic, and keeping our surroundings clean can make a
+            difference. These actions may seem small, but if many people
+            do them consistently, they can have a bigger impact.
+        </p>
+
+        <p>
+            This provision also reminds me that we should think about the
+            future, not only about what is convenient for us today. I
+            believe that protecting the environment is a shared
+            responsibility. If we become more aware of climate change and
+            do our part, we can help create a safer and healthier
+            environment for ourselves and for the generations that will
+            come after us.
+        </p>
+    </section>
+
+    <section class="highlight">
+        <div class="leaf">🌿</div>
+        <h3>Small Actions, Bigger Impact</h3>
+        <p>
+            Taking care of our environment today can help protect the
+            future of the people who come after us.
+        </p>
+    </section>
+
+    <div class="footer">
+        <p>TNCT • RA 9729 Reflection</p>
+        <p>Climate Change Awareness 🌱</p>
     </div>
-  </header>
 
-
-  <main class="container">
-
-    <!-- ABOUT ME -->
-    <section id="about">
-
-      <h2>A Little About Me</h2>
-
-      <p>
-        I’m Kevin, a Grade 12 HUMSS student who is still
-        learning more about myself and figuring out what I
-        want for my future. I don’t have everything figured
-        out yet, but I believe that every experience helps me
-        understand myself better.
-      </p>
-
-      <div class="profile">
-
-        <div class="profile-box">
-          <div class="icon">👤</div>
-          <div class="label">Name</div>
-          <div class="value">Kevin Gadiel G. Tresvalles</div>
-        </div>
-
-        <div class="profile-box">
-          <div class="icon">🎓</div>
-          <div class="label">Grade & Strand</div>
-          <div class="value">Grade 12 • HUMSS</div>
-        </div>
-
-        <div class="profile-box">
-          <div class="icon">♟️</div>
-          <div class="label">Interest</div>
-          <div class="value">Chess</div>
-        </div>
-
-        <div class="profile-box">
-          <div class="icon">🎯</div>
-          <div class="label">Current Goal</div>
-          <div class="value">Keep improving</div>
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- STRENGTHS AND WEAKNESSES -->
-    <section>
-
-      <h2>What Makes Me, Me?</h2>
-
-      <div class="cards">
-
-        <div class="card">
-
-          <h3>💪 My Strengths</h3>
-
-          <p>
-            One of my strengths is being determined when
-            something really matters to me. I’m also willing
-            to learn, especially when something interests me.
-            I may not always understand things quickly, but
-            I try to figure things out in my own way. I also
-            like thinking carefully before making decisions.
-          </p>
-
-        </div>
-
-
-        <div class="card">
-
-          <h3>💤 My Weaknesses</h3>
-
-          <p>
-            I can be a little lazy sometimes, and I can be
-            slow when doing certain things. I also sometimes
-            lack confidence and doubt myself even when I
-            might be capable of doing something. I know these
-            are things I need to improve, so I’m trying to
-            become more disciplined and believe in myself more.
-          </p>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- EXPERIENCE -->
-    <section>
-
-      <div class="chess">♟</div>
-
-      <h2>An Experience I’m Proud Of</h2>
-
-      <p>
-        One experience I’m proud of was participating in a
-        chess tournament where I ranked <strong>Top 7</strong>.
-        It may not be my biggest achievement, but it is
-        something I remember because it showed me that I
-        can accomplish something when I put effort into it.
-      </p>
-
-      <p>
-        Chess also taught me to be patient, think before
-        making a move, and learn from my mistakes.
-      </p>
-
-    </section>
-
-
-    <!-- FUTURE -->
-    <section>
-
-      <h2>Where I’m Going</h2>
-
-      <p>
-        I don’t know exactly what my future will look like
-        yet. There are still many things I want to experience,
-        learn, and improve about myself.
-      </p>
-
-      <p>
-        What I do know is that I want to keep moving forward
-        instead of staying in the same place. I know I’ll make
-        mistakes along the way, but I want to use them as
-        lessons rather than reasons to stop.
-      </p>
-
-    </section>
-
-
-    <!-- PROMISE -->
-    <section class="promise">
-
-      <h2>🎯 My Promise</h2>
-
-      <div class="promise-text">
-
-        <strong>
-          I will, and I really will, achieve our dream.
-        </strong>
-
-        I know there will be times when I feel lazy, slow,
-        or unsure of myself, but I won’t let those things
-        stop me. I promise to keep working on my weaknesses,
-        believe in myself more, and keep moving forward even
-        when things get difficult. One day, I hope I can look
-        back at this and know that I kept my promise.
-
-      </div>
-
-    </section>
-
-  </main>
-
-
-  <footer>
-    Made for my “Scan me and Discover" assignment • Kevin
-  </footer>
+</div>
 
 </body>
 </html>
